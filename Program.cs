@@ -15,10 +15,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // CORS: permitir Angular en localhost:4200
+// CORS: permitir Angular en localhost y producción en Firebase Hosting
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowLocalhost4200",
-        policy => policy.WithOrigins("http://localhost:4200")
+    options.AddPolicy("AllowAll",
+        policy => policy.AllowAnyOrigin()
                         .AllowAnyHeader()
                         .AllowAnyMethod());
 });
@@ -87,10 +88,18 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(5208, listenOptions =>
+    {
+        listenOptions.UseHttps("C:\\Users\\j_alexander200188\\Documents\\SSL.pfx", "Dxos$060901$"); // Ruta y clave real
+    });
+});
+
 var app = builder.Build();
 
 // Usa la política de CORS
-app.UseCors("AllowLocalhost4200");
+app.UseCors("AllowAll");
 
 app.UseSwagger();
 app.UseSwaggerUI();
@@ -101,10 +110,8 @@ app.UseAuthorization();
 app.UseHttpsRedirection();
 app.MapControllers();
 
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
+app.MapOpenApi();
+
 
 app.UseHttpsRedirection();
 

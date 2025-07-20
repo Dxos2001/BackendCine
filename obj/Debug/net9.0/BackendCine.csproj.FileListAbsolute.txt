@@ -114,3 +114,10 @@
 /Users/dxos/Documents/Trabajos/TravelService/Backend/BackendCine/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/dxos/Documents/Trabajos/TravelService/Backend/BackendCine/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
 /Users/dxos/Documents/Trabajos/TravelService/Backend/BackendCine/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/dxos/Documents/Trabajos/TravelService/Backend/BackendCine/obj/Debug/net9.0/BackendCine.sourcelink.json
+/Users/dxos/Documents/Trabajos/TravelService/Backend/BackendCine/bin/Debug/net9.0/publish/web.config
+/Users/dxos/Documents/Trabajos/TravelService/Backend/BackendCine/bin/Debug/net9.0/publish/appsettings.Development.json
+/Users/dxos/Documents/Trabajos/TravelService/Backend/BackendCine/bin/Debug/net9.0/publish/appsettings.json
+/Users/dxos/Documents/Trabajos/TravelService/Backend/BackendCine/bin/Debug/net9.0/publish/BackendCine.deps.json
+/Users/dxos/Documents/Trabajos/TravelService/Backend/BackendCine/bin/Debug/net9.0/publish/BackendCine.runtimeconfig.json
+/Users/dxos/Documents/Trabajos/TravelService/Backend/BackendCine/bin/Debug/net9.0/publish/BackendCine.staticwebassets.endpoints.json
